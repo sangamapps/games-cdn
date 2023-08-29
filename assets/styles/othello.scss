@@ -29,6 +29,15 @@
             transition: transform 0.5s;
         }
 
+        .sg-placed-cell {
+            box-shadow: 5px 5px 5px black;
+        }
+
+        .sg-placed-cell,
+        .sg-affected-cell {
+            background: #86ddc7;
+        }
+
         .sg-disk {
             padding: 30px;
             border-radius: 50px;
