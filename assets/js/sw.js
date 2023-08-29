@@ -1,24 +1,17 @@
-const staticCacheName = 'site-static-v3';
+const staticCacheName = 'site-static-v3.0.0';
 const assets = [
   /** JS files */
   '/assets/js/bundle/main.js',
-  '/assets/js/bundle/bundle.0.js',
-  '/assets/js/bundle/bundle.1.js',
-  '/assets/js/bundle/bundle.2.js',
-  '/assets/js/bundle/bundle.3.js',
-  '/assets/js/bundle/bundle.4.js',
-  '/assets/js/bundle/bundle.5.js',
-  '/assets/js/bundle/bundle.6.js',
-  '/assets/js/bundle/bundle.7.js',
-  '/assets/js/bundle/bundle.8.js',
   /** Image files */
-  '/assets/images/uno.png',
   '/assets/images/ass.png',
   '/assets/images/CLUB.png',
   '/assets/images/DIAMOND.png',
+  '/assets/images/favicon.png',
   '/assets/images/HEART.png',
-  '/assets/images/SPADE.png',
   '/assets/images/joker.png',
+  '/assets/images/othello.png',
+  '/assets/images/SPADE.png',
+  '/assets/images/uno.png',
   /** Audio files */
   '/assets/music/new-notify.mp3',
   '/assets/music/error-notify.mp3',
