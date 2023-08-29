@@ -19,7 +19,7 @@
     }
 
     .chatbox-btn {
-        position: absolute;
+        position: fixed;
         bottom: $chat-btn-right;
         right: $chat-btn-right;
         height: $chat-btn-height;
@@ -151,6 +151,7 @@
     }
 
     .game-component {
+        margin-bottom: 100px;
         @import "~bootstrap/scss/bootstrap";
     }
 }
