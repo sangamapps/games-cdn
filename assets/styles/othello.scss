@@ -8,11 +8,27 @@
 
     .board-container-inner {
         background: #373737;
-        padding: 5px;
         border-radius: 10px;
 
         .sg-row {
             display: flex;
+        }
+
+        .row-num,
+        .cell-num {
+            color: #27b08e;
+        }
+
+        .row-num {
+            margin: auto 0px;
+            text-align: center;
+            width: 15px;
+            font-size: x-small;
+        }
+
+        .cell-num {
+            margin: 0px auto;
+            font-size: small;
         }
 
         .sg-cell {
@@ -73,6 +89,10 @@
 @media only screen and (max-width: 550px) {
     .board-container {
         border: 20px black solid !important;
+    }
+
+    .row-num {
+        width: 10px !important;
     }
 
     .sg-cell {
