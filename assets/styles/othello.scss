@@ -1,0 +1,104 @@
+.board-container {
+    display: flex;
+    margin: 10px auto;
+    border: 40px black solid;
+    border-radius: 10px;
+    padding: 3px;
+    background: #607d8b;
+
+    .board-container-inner {
+        background: #373737;
+        padding: 5px;
+        border-radius: 10px;
+
+        .sg-row {
+            display: flex;
+        }
+
+        .sg-cell {
+            background: #27b08e;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 10px black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sg-cell:not(:disabled):hover {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }
+
+        .sg-disk {
+            padding: 30px;
+            border-radius: 50px;
+            transition: background-color 0.5s ease;
+        }
+
+        .sg-disk-B {
+            background: black;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .sg-disk-W {
+            background: white;
+            box-shadow: 5px 5px 10px black;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .board-container {
+        border: 30px black solid !important;
+    }
+
+    .sg-cell {
+        padding: 7.5px !important;
+    }
+
+    .sg-disk {
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .board-container {
+        border: 20px black solid !important;
+    }
+
+    .sg-cell {
+        padding: 5px !important;
+    }
+
+    .sg-disk {
+        padding: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .board-container {
+        border: 15px black solid !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .sg-cell {
+        padding: 3px !important;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .sg-disk {
+        padding: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .board-container {
+        border: 10px black solid !important;
+    }
+
+    .sg-disk {
+        padding: 10px !important;
+    }
+}
