@@ -6,7 +6,7 @@
     "description": "Games app.",
     "icons": [
         {
-            "src": "/assets/images/favicon.png",
+            "src": "/games/assets/images/favicon.png",
             "type": "image/png",
             "sizes": "192x192"
         }

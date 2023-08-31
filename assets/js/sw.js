@@ -1,22 +1,22 @@
 const staticCacheName = 'site-static-v3.0.0';
 const assets = [
   /** JS files */
-  '/assets/js/bundle/main.js',
+  '/games/assets/js/bundle/main.js',
   /** Image files */
-  '/assets/images/ass.png',
-  '/assets/images/CLUB.png',
-  '/assets/images/DIAMOND.png',
-  '/assets/images/favicon.png',
-  '/assets/images/HEART.png',
-  '/assets/images/joker.png',
-  '/assets/images/othello.png',
-  '/assets/images/SPADE.png',
-  '/assets/images/uno.png',
+  '/games/assets/images/ass.png',
+  '/games/assets/images/CLUB.png',
+  '/games/assets/images/DIAMOND.png',
+  '/games/assets/images/favicon.png',
+  '/games/assets/images/HEART.png',
+  '/games/assets/images/joker.png',
+  '/games/assets/images/othello.png',
+  '/games/assets/images/SPADE.png',
+  '/games/assets/images/uno.png',
   /** Audio files */
-  '/assets/music/new-notify.mp3',
-  '/assets/music/error-notify.mp3',
-  '/assets/music/light-notify.mp3',
-  '/assets/music/buzz-notify.mp3',
+  '/games/assets/music/new-notify.mp3',
+  '/games/assets/music/error-notify.mp3',
+  '/games/assets/music/light-notify.mp3',
+  '/games/assets/music/buzz-notify.mp3',
 ];
 // install event
 self.addEventListener('install', evt => {
