@@ -19,7 +19,32 @@
         border-radius: 5px;
     }
 
+    .player-token-card {
+        background: gray;
+        border-radius: 10px;
+        padding: 5px 5px 0px;
+        max-width: 300px;
+        margin: 5px auto;
+    }
+
+    .player-token-label {
+        padding: 5px;
+        text-align: center;
+        color: white;
+    }
+
+    .player-token {
+        overflow-wrap: anywhere;
+        background: #1d1e22;
+        color: #687c97;
+        padding: 9px;
+        border-radius: 10px;
+        font-size: small;
+    }
+
     .home-btn,
+    .show-token-btn,
+    .copy-token-btn,
     .signout-btn {
         border-radius: 5px;
         padding: 5px 10px;
@@ -27,11 +52,17 @@
         color: white;
     }
 
-    .home-btn {
+    .home-btn,
+    .show-token-btn[data-show=true] {
         background: $primary;
     }
 
-    .signout-btn {
+    .show-token-btn[data-show=false] {
+        background: $warning;
+    }
+
+    .signout-btn,
+    .copy-token-btn {
         background: $danger;
     }
 }
