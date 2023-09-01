@@ -30,7 +30,8 @@
     .player-token-label {
         padding: 5px;
         text-align: center;
-        color: white;
+        color: $warning;
+        font-size: small;
     }
 
     .player-token {
@@ -53,16 +54,15 @@
     }
 
     .home-btn,
-    .show-token-btn[data-show=true] {
+    .show-token-btn {
         background: $primary;
     }
 
-    .show-token-btn[data-show=false] {
+    .copy-token-btn {
         background: $warning;
     }
 
-    .signout-btn,
-    .copy-token-btn {
+    .signout-btn {
         background: $danger;
     }
 }
