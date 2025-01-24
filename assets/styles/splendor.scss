@@ -3,7 +3,7 @@ $splendor-blue :blue;
 $splendor-green: green;
 $splendor-red: red;
 $splendor-black: black;
-$splendor-yellow: gold;
+$splendor-yellow: goldenrod;
 
 .player-additonal-info {
     background: white;
@@ -67,6 +67,7 @@ $splendor-yellow: gold;
     height: 18px;
     width: 18px;
     background: brown;
+    border: 1px solid white;
 
     display: flex;
     justify-content: center;
@@ -84,6 +85,7 @@ $splendor-yellow: gold;
     }
 
     .splendor-card {
+        position: relative;
         height: 70px;
         width: 55px;
         margin: 5px 7px;
@@ -93,7 +95,7 @@ $splendor-yellow: gold;
         display: flex;
         flex-direction: column;
 
-        .card-label{
+        .card-label {
             margin: auto;
             color: white;
             font-size: 10px;
@@ -130,6 +132,7 @@ $splendor-yellow: gold;
         }
 
         .splendor-coins {
+            z-index: 1;
             margin: auto 1px 1px;
 
             .splendor-coin {
@@ -156,7 +159,8 @@ $splendor-yellow: gold;
     }
 
     .splendor-card[class*="noble"] {
-        background: salmon;
+        background: lightpink;
+        border-color: gold;
         height: 70px;
     }
 
@@ -165,11 +169,43 @@ $splendor-yellow: gold;
     }
 
     .splendor-card[class*="level2" i] {
-        background: gold;
+        background: burlywood;
     }
 
     .splendor-card[class*="level1" i] {
         background: lightgreen;
+    }
+
+    .splendor-card-bg {
+        position: absolute;
+        height: 65px;
+        width: 50px;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .splendor-card-bg-img-1 {
+        background-image: url('/assets/images/splendor-card-bg-img-1.png');
+    }
+
+    .splendor-card-bg-img-2 {
+        background-image: url('/assets/images/splendor-card-bg-img-2.png');
+    }
+
+    .splendor-card-bg-img-3 {
+        background-image: url('/assets/images/splendor-card-bg-img-3.png');
+    }
+
+    .splendor-card-bg-img-4 {
+        background-image: url('/assets/images/splendor-card-bg-img-4.png');
+    }
+
+    .splendor-card-bg-img-5 {
+        background-image: url('/assets/images/splendor-card-bg-img-5.png');
+    }
+
+    .splendor-card-bg-img-6 {
+        background-image: url('/assets/images/splendor-card-bg-img-6.png');
     }
 
     .splendor-coins {
