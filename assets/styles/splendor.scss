@@ -86,13 +86,17 @@ $splendor-yellow: gold;
             }
         }
 
-        .card-points {
-            height: 15px;
-            width: 15px;
+        .splendor-card-color .splendor-coin,
+        .splendor-card-points {
+            height: 12px;
+            width: 12px;
             margin: 2px;
+            font-size: 10px;
+        }
+
+        .splendor-card-points {
             border-radius: 100%;
             background: brown;
-            font-size: small;
 
             display: flex;
             justify-content: center;
@@ -123,6 +127,7 @@ $splendor-yellow: gold;
 
     .splendor-card[class*="noble"] {
         background: salmon;
+        height: 70px;
     }
 
     .splendor-card[class*="level3" i] {
@@ -139,46 +144,46 @@ $splendor-yellow: gold;
 
     .splendor-coins {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         margin: 5px 20px;
+    }
 
-        .splendor-coin {
-            height: 30px;
-            width: 30px;
-            margin: 5px;
-            border-radius: 100%;
-            border: 2px black solid;
-            outline: 2px white solid;
+    .splendor-coin {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        border-radius: 100%;
+        border: 2px black solid;
+        outline: 2px white solid;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 
-        .splendor-coin.white {
-            background: $splendor-white;
-        }
+    .splendor-coin.white {
+        background: $splendor-white;
+    }
 
-        .splendor-coin.blue {
-            background: $splendor-blue;
-        }
+    .splendor-coin.blue {
+        background: $splendor-blue;
+    }
 
-        .splendor-coin.green {
-            background: $splendor-green;
-        }
+    .splendor-coin.green {
+        background: $splendor-green;
+    }
 
-        .splendor-coin.red {
-            background: $splendor-red;
-        }
+    .splendor-coin.red {
+        background: $splendor-red;
+    }
 
-        .splendor-coin.black {
-            background: $splendor-black;
-        }
+    .splendor-coin.black {
+        background: $splendor-black;
+    }
 
-        .splendor-coin.yellow {
-            background: $splendor-yellow;
-        }
+    .splendor-coin.yellow {
+        background: $splendor-yellow;
     }
 
     .splendor-taken-coins {
@@ -222,5 +227,9 @@ $splendor-yellow: gold;
         display: flex;
         justify-content: center;
         margin: 5px
+    }
+
+    .sg-confirm-modal-body button {
+        margin: auto;
     }
 }
