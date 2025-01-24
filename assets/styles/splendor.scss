@@ -1,0 +1,226 @@
+$splendor-white: purple;
+$splendor-blue :blue;
+$splendor-green: green;
+$splendor-red: red;
+$splendor-black: black;
+$splendor-yellow: gold;
+
+.player-additonal-info {
+    background: white;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px black solid;
+
+    .player-resource-count {
+        color: white;
+        padding: 3px 5px;
+        border-radius: 3px;
+    }
+
+    .player-resource-color-white {
+        background-color: $splendor-white;
+    }
+
+    .player-resource-color-blue {
+        background-color: $splendor-blue;
+    }
+
+    .player-resource-color-green {
+        background-color: $splendor-green;
+    }
+
+    .player-resource-color-red {
+        background-color: $splendor-red;
+    }
+
+    .player-resource-color-black {
+        background-color: $splendor-black;
+    }
+
+    .player-resource-color-yellow {
+        background-color: $splendor-yellow;
+    }
+
+    .player-coins-count {
+        border-radius: 20px;
+    }
+}
+
+.player-card {
+    width: 140px !important;
+    padding: 5px !important;
+}
+
+.splendor-cards-layout {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .splendor-cards {
+        margin: 2px 20px;
+    }
+
+    .splendor-card {
+        height: 70px;
+        width: 50px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 2px black solid;
+        outline: 2px white solid;
+        display: flex;
+        flex-direction: column;
+
+        .dots {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto auto 5px;
+
+            .dot {
+                margin: 2px;
+                background: white;
+                padding: 5px;
+                border-radius: 100%;
+            }
+        }
+
+        .card-points {
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            border-radius: 100%;
+            background: brown;
+            font-size: small;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .splendor-coins {
+            margin: auto 1px 1px;
+
+            .splendor-coin {
+                height: 15px;
+                width: 15px;
+                font-size: 10px;
+                margin: 3px;
+            }
+        }
+    }
+
+    .splendor-card.openedNobleCards {
+        border: none;
+        outline: none;
+    }
+
+    .splendor-card:not([class*="opened"]) {
+        cursor: pointer;
+    }
+
+    .splendor-card[class*="noble"] {
+        background: salmon;
+    }
+
+    .splendor-card[class*="level3" i] {
+        background: steelblue;
+    }
+
+    .splendor-card[class*="level2" i] {
+        background: gold;
+    }
+
+    .splendor-card[class*="level1" i] {
+        background: lightgreen;
+    }
+
+    .splendor-coins {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 20px;
+
+        .splendor-coin {
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            border-radius: 100%;
+            border: 2px black solid;
+            outline: 2px white solid;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .splendor-coin.white {
+            background: $splendor-white;
+        }
+
+        .splendor-coin.blue {
+            background: $splendor-blue;
+        }
+
+        .splendor-coin.green {
+            background: $splendor-green;
+        }
+
+        .splendor-coin.red {
+            background: $splendor-red;
+        }
+
+        .splendor-coin.black {
+            background: $splendor-black;
+        }
+
+        .splendor-coin.yellow {
+            background: $splendor-yellow;
+        }
+    }
+
+    .splendor-taken-coins {
+        .splendor-coins {
+            margin: 5px 30px;
+        }
+    }
+
+    .reserved-cards {
+        .splendor-card {
+            margin: 5px auto;
+        }
+    }
+
+    .splendor-available-coins,
+    .splendor-taken-coins {
+
+        .splendor-coin {
+            cursor: pointer;
+            margin: 5px auto;
+        }
+    }
+
+    .splendor-taken-coins,
+    .reserved-cards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        border: 1px white solid;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .reserved-card-label {
+        text-align: center;
+        color: white;
+    }
+
+    .end-turn {
+        display: flex;
+        justify-content: center;
+        margin: 5px
+    }
+}

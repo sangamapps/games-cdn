@@ -31,6 +31,12 @@ button:active:not(:disabled) {
     box-shadow: none;
 }
 
+.sg-btn-warning {
+    @extend .sg-btn;
+    @extend .sg-bg-warning;
+    box-shadow: none;
+}
+
 .sg-btn-danger {
     @extend .sg-btn;
     @extend .sg-bg-danger;
