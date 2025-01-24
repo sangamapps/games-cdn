@@ -13,6 +13,14 @@ $splendor-yellow: gold;
     flex-direction: column;
     justify-content: center;
     border: 1px black solid;
+    overflow: visible !important;
+
+    .splendor-card-points {
+        top: -10px;
+        right: -10px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
 
     .player-resource-count {
         color: white;
@@ -54,6 +62,18 @@ $splendor-yellow: gold;
     padding: 5px !important;
 }
 
+.splendor-card-points {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background: brown;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 .splendor-cards-layout {
     display: flex;
     flex-direction: column;
@@ -65,11 +85,11 @@ $splendor-yellow: gold;
 
     .splendor-card {
         height: 70px;
-        width: 50px;
-        margin: 5px;
-        border-radius: 10px;
-        border: 2px black solid;
-        outline: 2px white solid;
+        width: 55px;
+        margin: 5px 8px;
+        border-radius: 5px;
+        padding: 1px;
+        border: 2px white solid;
         display: flex;
         flex-direction: column;
 
@@ -86,30 +106,29 @@ $splendor-yellow: gold;
             }
         }
 
-        .splendor-card-color .splendor-coin,
         .splendor-card-points {
-            height: 12px;
-            width: 12px;
-            margin: 2px;
-            font-size: 10px;
+            height: 15px;
+            width: 15px;
+            font-size: 12px;
+            top: -10px;
+            left: -10px;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
         }
 
-        .splendor-card-points {
-            border-radius: 100%;
-            background: brown;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
+        .splendor-card-color .splendor-coin {
+            height: 17px;
+            width: 17px;
+            margin: 2px;
         }
 
         .splendor-coins {
             margin: auto 1px 1px;
 
             .splendor-coin {
-                height: 15px;
-                width: 15px;
+                height: 16px;
+                width: 16px;
+                border-width: 1px;
                 font-size: 10px;
                 margin: 3px;
             }
@@ -119,6 +138,10 @@ $splendor-yellow: gold;
     .splendor-card.openedNobleCards {
         border: none;
         outline: none;
+    }
+
+    .splendor-card[class*="opened"]:not([class*="openedNoble"]) {
+        box-shadow: 4px 3px 0 white;
     }
 
     .splendor-card:not([class*="opened"]) {
@@ -153,8 +176,7 @@ $splendor-yellow: gold;
         width: 30px;
         margin: 5px;
         border-radius: 100%;
-        border: 2px black solid;
-        outline: 2px white solid;
+        border: 2px white solid;
 
         display: flex;
         justify-content: center;
