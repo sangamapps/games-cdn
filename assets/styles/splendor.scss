@@ -93,6 +93,13 @@ $splendor-yellow: gold;
         display: flex;
         flex-direction: column;
 
+        .card-label{
+            margin: auto;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
         .dots {
             display: flex;
             flex-wrap: wrap;
