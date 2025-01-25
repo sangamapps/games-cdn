@@ -1,9 +1,9 @@
 $splendor-white: purple;
-$splendor-blue :blue;
-$splendor-green: green;
-$splendor-red: red;
+$splendor-blue :steelblue;
+$splendor-green: mediumseagreen;
+$splendor-red: indianred;
 $splendor-black: black;
-$splendor-yellow: goldenrod;
+$splendor-yellow: gold;
 
 .player-additonal-info {
     background: white;
@@ -85,6 +85,7 @@ $splendor-yellow: goldenrod;
     }
 
     .splendor-card {
+        font-weight: bold;
         position: relative;
         height: 70px;
         width: 55px;
@@ -158,22 +159,65 @@ $splendor-yellow: goldenrod;
         cursor: pointer;
     }
 
-    .splendor-card[class*="noble"] {
-        background: lightpink;
-        border-color: gold;
-        height: 70px;
+    .splendor-card[class*="openedLevel3" i] {
+        background: brown;
     }
 
-    .splendor-card[class*="level3" i] {
-        background: steelblue;
+    .splendor-card[class*="openedLevel2" i] {
+        background: coral;
     }
 
-    .splendor-card[class*="level2" i] {
+    .splendor-card[class*="openedLevel1" i] {
         background: burlywood;
     }
 
-    .splendor-card[class*="level1" i] {
-        background: lightgreen;
+    .splendor-card-noble {
+        background: bisque;
+        border-color: gold;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-4.png');
+        }
+    }
+
+    .splendor-card-white {
+        background: $splendor-white;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-1.png');
+        }
+    }
+
+    .splendor-card-blue {
+        background: $splendor-blue;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-6.png');
+        }
+    }
+
+    .splendor-card-green {
+        background: $splendor-green;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-3.png');
+        }
+    }
+
+    .splendor-card-red {
+        background: $splendor-red;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-5.png');
+        }
+    }
+
+    .splendor-card-black {
+        background: $splendor-black;
+
+        .splendor-card-bg {
+            background-image: url('/assets/images/splendor-card-bg-img-2.png');
+        }
     }
 
     .splendor-card-bg {
@@ -182,30 +226,6 @@ $splendor-yellow: goldenrod;
         width: 50px;
         background-size: cover;
         z-index: 0;
-    }
-
-    .splendor-card-bg-img-1 {
-        background-image: url('/assets/images/splendor-card-bg-img-1.png');
-    }
-
-    .splendor-card-bg-img-2 {
-        background-image: url('/assets/images/splendor-card-bg-img-2.png');
-    }
-
-    .splendor-card-bg-img-3 {
-        background-image: url('/assets/images/splendor-card-bg-img-3.png');
-    }
-
-    .splendor-card-bg-img-4 {
-        background-image: url('/assets/images/splendor-card-bg-img-4.png');
-    }
-
-    .splendor-card-bg-img-5 {
-        background-image: url('/assets/images/splendor-card-bg-img-5.png');
-    }
-
-    .splendor-card-bg-img-6 {
-        background-image: url('/assets/images/splendor-card-bg-img-6.png');
     }
 
     .splendor-coins {
@@ -220,6 +240,7 @@ $splendor-yellow: goldenrod;
         margin: 5px;
         border-radius: 100%;
         border: 2px white solid;
+        font-weight: bold;
 
         display: flex;
         justify-content: center;
