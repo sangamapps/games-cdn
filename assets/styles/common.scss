@@ -122,12 +122,15 @@ a {
         text-align: center;
     }
 
+    button:not([class*="sg-btn"]) {
+        background: transparent;
+        border-radius: 5px;
+        box-shadow: 0 0 3px white;
+    }
+
     button {
         margin: 10px auto;
         color: white;
-        background: transparent;
-        border-radius: 10px;
-        box-shadow: 0 0 3px white;
         padding: 5px 10px;
     }
 }
@@ -155,4 +158,9 @@ a {
         color: white;
         text-align: center;
     }
+}
+
+.sg-justify-center {
+    display: flex;
+    justify-content: center;
 }
